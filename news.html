@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>消息</title>
+    <!-- Path to Framework7 Library CSS, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <!-- Path to Framework7 color related styles, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+    <!-- Views -->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-fixed toolbar-fixed">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="index" class="page">
+ 
+            <!-- Top Navbar. In Material theme it should be inside of the page-->
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="center">Awesome App</div>
+              </div>
+            </div>
+            <div class="toolbar" style="background-color: #ccc">
+              <div class="toolbar-inner">
+                <i class="icon icon-back"></i>
+                <i class="icon icon-bars"></i>
+              </div>
+            </div>
+ 
+            <!-- Scrollable page content -->
+            <div class="toolbar messagebar">
+              <div class="toolbar-inner">
+                <textarea placeholder="Message"></textarea><a href="#" class="link">Send</a>
+              </div>
+            </div>
+            <div class="page-content messages-content">
+              <div class="messages">
+                <!-- 时间戳 -->
+                <div class="messages-date">Sunday, Feb 9 <span>12:58</span></div>
+           
+                <!-- 发送的消息 (默认为绿色背景，在右边) -->
+                <div class="message message-sent">
+                  <!-- Bubble with text -->
+                  <div class="message-text">Hello</div>
+                </div>
+           
+                <!-- 另一条发送的消息 -->
+                <div class="message message-sent">
+                  <!-- 文本气泡 -->
+                  <div class="message-text">How are you?</div>
+                </div>
+           
+                <!-- 接收的信息(默认为灰色背景，在左边) -->
+                <div class="message message-with-avatar message-received">
+                  <!-- Sender name -->
+                  <div class="message-name">Kate</div>
+           
+                  <!-- 文本气泡 -->
+                  <div class="message-text">I am fine, thanks</div>
+           
+                  <!-- 发送者头像 -->
+                  <div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar"></div>
+                </div>
+           
+                <!-- 另一个时间戳 -->
+                <div class="messages-date">Sunday, Feb 3 <span>11:58</span></div>
+           
+                <!-- Sent message with image -->
+                <div class="message message-pic message-sent">
+                  <!-- Bubble with image -->
+                  <div class="message-text"><img src="http://lorempixel.com/300/300/"></div>
+                  <!-- Message label -->
+                  <div class="message-label">Delivered 2 days ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html> 
